@@ -2,89 +2,220 @@
 <html>
     <head>
         <title>railway reservation form </title>
-        <link rel="stylesheet" href="style.css">
+        
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
         
     </head>
     
     <body bgcolor="#0AAFFBC">
         
-        <nav>
-            <div class="menu-icon">
-      <span class="fas fa-bars"></span></div>
-      <div class="logo"><img src="train.gif" width="180px" height="70px"></div>
-      <div class="nav-items">
-      <li><a href="index.html">Home Page</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Blogs</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Feedback</a></li>
-      </div>
-      <div class="search-icon">
-      <span class="fas fa-search"></span></div>
-      <div class="cancel-icon">
-      <span class="fas fa-times"></span></div>
-      <form action="#">
-              <input type="search" class="search-data" placeholder="Search" required>
-              <button type="submit" class="fas fa-search"></button>
-            </form>
-      </nav>
-    <form name="railway">
-        <center>
-        <h1><marquee bgcolor="#0FBF00">Railway Reservation System </marquee> </h1>
-     <table>
-     <tr>
-         <td>From:</td>
-         <td><input type="text" name=""railway"></td>
-         </tr>
-     <tr>
-     <td>To:</td>
-     <td><input type="text" name="txt2"></td>
-             </tr>
-        <tr>
-            <td>surName:</td>
-            <td><input type="text" name=""></td></tr>
-            <tr>
-            <Td>middle name:</Td>
-            <td><input type="text" name=""></td></tr>
-            <tr>
-            <Td>last name:</Td>
-            <Td><input type="text" name=""></Td></tr>
-         <tr>
-         <td>Age:</td>
-         <td><input type="number" name=""></td>
-         </tr> 
-         <tr>
-         <td>Address:</td>
-         <td><input type="text" nqme=""></td></tr>
-         <tr>
-         <Td>adhaar:</Td>
-         <Td><input type="number" value=""></Td></tr>
-         <tr>
-         <Td>account number:</Td>
-         <Td><input type="number" value=""></Td></tr>
-         <tr>
-         <Td>train number:</Td>
-         <Td><input type="number" value=""></Td></tr>
-         <tr>
-         <Td>seat number:</Td>
-         <Td><input type="number" value=""></Td></tr>
-         <tr>
-         <Td>date:</Td>
-         <Td><input type="number" value=""> </Td></tr>
-          <tr>
-          <td>Payment options:</td>
-         <td> 
-          <input type="radio" name="payment" value="cc" />Credit Card <br />
-<input type="radio" name="payment" value="dc" />Debit card <br /> 
-<input type="radio" name="payment" value="wallet">wallet<br/>
-        </td>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-bold">
+            <a class="navbar-brand" href="#">
+                <img src="train.gif" width="150" height="50" class="d-inline-block align-top" alt="">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           
-          <tr>
-           <td><input type="submit" value="submit" ></td>
-           <td><input type="reset" value="reset"></td>
-           <td>><input type="submit" value="Cancel"></td></tr>   
-         </table>  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="link.html">Feature</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Train</a>
+                    <a class="dropdown-item" href="#">cab</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Flight</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 font-weight-bold" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success font-weight-bold my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav><br>
+
+          <div class="container">
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="validationTooltip01">From</label>
+                    <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Delhi" required>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">To</label>
+                    <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Hyderabad" required>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="form-row">
+
+                    <div class="col-md-4 mb-3">
+                        <label for="validationTooltipUsername">Username</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                          </div>
+                          <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" required>
+                          <div class="invalid-tooltip">
+                            Please choose a unique and valid username.
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-md-4 mb-3">
+                       <label>Age:</label><input class="form-control" type="text" name="age" placeholder="20" required>
+                    </div>
+                
+                    <div class="col-md-4 mb-3">
+                        <label>Gender:</label>
+                         <div class="radio">
+                            <label><input class="form-control" type="radio" name="optradio" checked>Male</label>
+                          
+                            <label><input class="form-control" type="radio" name="optradio">Female</label>
+                          
+                            <label><input class="form-control" type="radio" name="optradio" >Others</label>
+                          </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        E-mail ID: <input  class="form-control" type="email" id="email" placeholder="xyz@gmail.com" autocomplete='off' onkeyup="validateEmail()" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid Email.
+                          </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        Password: <input class="form-control" type="password" id="password" placeholder="abc@34$" autocomplete='off' onkeyup="validatePassword()" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid passward.
+                          </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        Mobile No.: <input class="form-control" type="text" name="mobileno" placeholder="7894561237" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid mobile number.
+                          </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label>Address</label> <input class="form-control" type="text" name="address" placeholder="telangana" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Village:</label> <input class="form-control" type="text" name="village" placeholder="rajaram" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                             <label>Mondel:</label> <input class="form-control" type="text" name="mondel" placeholder="kangti" required>
+                        </div>
+                    </div>
+
+        
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationTooltip03">City</label>
+                    <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+                    <div class="invalid-tooltip">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationTooltip04">State</label>
+                    <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+                    <div class="invalid-tooltip">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationTooltip05">Zip</label>
+                    <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+                    <div class="invalid-tooltip">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label>Account Number:</label>
+                        <input type="text" class="form-control" name="account" placeholder="xxxx-xxxx-xxxx">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Addhar Number:</label>
+                        <input type="text" class="form-control" name="addhar" placeholder="xxxx-xxxx-xxxx">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Train Number:</label>
+                        <input type="text" class="form-control" name="train.N" placeholder="12345">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <a style="text-decoration: none;" href="submitted.html"><input class="btn btn-primary mb-3" type="submit"> </a>
+              </form>
+              <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+        
+        </div>
+
+    
+        
          <br><br>
          <h1 style="text-align: center;"><a href="index.html">Go-To-Home-Page</a></h1> 
     </body>
